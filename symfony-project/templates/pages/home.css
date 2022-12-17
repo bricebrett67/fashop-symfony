@@ -1,0 +1,8 @@
+.title {
+    padding: 18px 14px 18px 14px;
+    border: solid 1px black;
+    font-size: 20px;
+    /* max-width: 174.5px; */
+    color: white;
+    letter-spacing: 3px;
+}

@@ -1,7 +1,22 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %}
+<link rel="stylesheet" href="home.css" type="text/css" media="all">
+{% endblock %}
+
+{% block title %}PAGESMODE{% endblock %}
 
 {% block body %}
-<div class="header">
-    <h1>P A G E S M O D E<h1>
-</div>
+
+{% block header %}
+{% include 'pages/header.html.twig' %}
+{% endblock %}
+
+{% block main %}
+{% include 'pages/content.html.twig' %}
+{% endblock %}
+
+{% block footer %}
+{% include 'pages/footer.html.twig' %}
+{% endblock %}
+
 {% endblock %}
