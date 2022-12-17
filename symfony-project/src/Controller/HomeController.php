@@ -10,12 +10,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class HomeController extends AbstractController
 {
     /**
-     * Page d'accueil
-     * 
-     * @Route('/home', name='accueil')
+     * @Route("/", name="home")
+     * @return Response
      */
-    public function home()
+    public function home(): Response
     {
-        return new Response(" Bienvenue sur la page d'accueil ! ");
+        return $this->render("pages/home.html.twig");
     }
 }
