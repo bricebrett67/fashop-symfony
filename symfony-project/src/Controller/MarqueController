@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Controller;
+
+use App\Entity\Marque;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
+class MarqueController extends AbstractController
+{
+    /**
+     * @Route("/marque", name="marque")
+     * @return Response
+     */
+    public function index(): Response
+    {
+        return $this->render("pages/home.html.twig");
+    }
+}
