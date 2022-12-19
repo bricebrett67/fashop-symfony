@@ -1,7 +1,9 @@
 <p>Trouvez toutes les marques de prêt-à-porter et de chaussure à deux pas
     de chez vous</p>
 
-    <form action="" method="POST">
-        <input type="text" placeholder="Rechercher une marque">
-        <button> Rechercher</button>
-    </form>
+{{ form_start(form) }}
+{{ form_label(form.name) }}
+
+{{ form_rest(form) }}
+<button type="submit">Rechercher une marque</button>
+{{ form_end(form) }}
